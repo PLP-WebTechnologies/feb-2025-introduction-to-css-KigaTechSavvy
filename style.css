@@ -1,0 +1,204 @@
+/* ---------------- GLOBAL STYLES ---------------- */
+
+/* Selector: body - applies global font, spacing, background and text color */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* FONT USED */
+    line-height: 1.6;
+    margin: 0;                     /* MARGIN */
+    padding: 0;                    /* PADDING */
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* ---------------- HEADER STYLES ---------------- */
+
+/* Selector: header - styles header background, text and spacing */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem;                 /* PADDING */
+    text-align: center;
+    margin-bottom: 2rem;          /* MARGIN */
+}
+
+/* Selector: header h1 - styles heading inside header */
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;        /* MARGIN */
+}
+
+/* ---------------- SECTION STYLES ---------------- */
+
+/* Selector: section - layout and styling for sections */
+section {
+    background-color: white;
+    margin: 2rem auto;            /* MARGIN */
+    padding: 2rem;                /* PADDING */
+    max-width: 1200px;
+    border-radius: 8px;           /* BORDER (rounded corners) */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------- IMAGE STYLES ---------------- */
+
+/* Selector: .image-container - layout for images */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;                    /* SPACING (acts like margin) */
+    margin: 2rem 0;               /* MARGIN */
+}
+
+/* Selector: .featured-image - ✅ IMAGE STYLES */
+.featured-image {
+    max-width: 100%;
+    height: auto;
+    border: 4px solid #3498db;    /* BORDER */
+    border-radius: 12px;          /* BORDER (rounded corners) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    object-fit: cover;
+    max-height: 400px;
+}
+
+/* Selector: .featured-image:hover - IMAGE HOVER STYLES */
+.featured-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border-color: #2980b9;        /* BORDER CHANGE ON HOVER */
+}
+
+/* ---------------- RESPONSIVE IMAGE STYLES ---------------- */
+
+@media (max-width: 768px) {
+    /* Selector: .image-container (responsive layout) */
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Selector: .featured-image (responsive image size) */
+    .featured-image {
+        max-width: 90%;           /* SIZE ADJUSTMENT */
+        margin: 1rem 0;           /* MARGIN */
+    }
+}
+
+/* ---------------- TABLE STYLES ---------------- */
+
+/* Selector: table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;               /* MARGIN */
+}
+
+/* Selectors: th, td - table cell styles */
+th, td {
+    padding: 12px;                /* PADDING */
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* BORDER */
+}
+
+/* Selector: th - table header */
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Selector: tr:hover - row hover effect */
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* ---------------- FORM STYLES ---------------- */
+
+/* Selector: form */
+form {
+    max-width: 600px;
+    margin: 0 auto;               /* MARGIN */
+}
+
+/* Selector: input fields & select - text input styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;                /* PADDING */
+    margin: 8px 0;                /* MARGIN */
+    border: 1px solid #ddd;       /* BORDER */
+    border-radius: 4px;           /* BORDER */
+    box-sizing: border-box;
+}
+
+/* Selector: submit button */
+input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;           /* PADDING */
+    border: none;
+    border-radius: 4px;           /* BORDER */
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Selector: submit button hover */
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* ---------------- FOOTER STYLES ---------------- */
+
+/* Selector: footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1.5rem;              /* PADDING */
+    text-align: center;
+    margin-top: 2rem;             /* MARGIN */
+}
+
+/* Selector: footer a - links inside footer */
+footer a {
+    color: #3498db;
+    text-decoration: none;
+    margin: 0 10px;               /* MARGIN */
+}
+
+/* Selector: footer a:hover - link hover effect */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------- ORDERED LIST ---------------- */
+
+/* Selector: ol - ordered list */
+ol {
+    padding-left: 2rem;           /* PADDING */
+}
+
+/* Selector: ol li - list item style */
+ol li {
+    margin-bottom: 0.5rem;        /* MARGIN */
+    color: #2c3e50;
+}
+
+/* ---------------- FORM LABELS ---------------- */
+
+/* Selector: label - form label styles */
+label {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 1rem;             /* MARGIN */
+    display: block;
+}
+
+/* Selector: radio/checkbox inputs */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;            /* MARGIN */
+}
